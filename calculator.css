@@ -1,0 +1,159 @@
+body
+{
+    background-color: lightblue;
+}
+.output
+{
+    font-size: 30px;
+    padding: 2px;
+    color: lightgrey;
+}
+.result
+{
+    font-size: 25px;
+    padding: 26px;
+    color: black;
+}
+.cardb
+{
+    width: 46%;
+    height: 707px;
+    margin-left: 29%;
+}
+.button
+{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+}
+.button button
+{
+    width: 73px;
+    height: 68px;
+    margin: 15px;
+    float: left;
+    border: 1px solid gray;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+.answer
+{
+    border: 1px solid gray;
+    height: 140px;
+    background-color: white;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: black;
+    background-clip: border-box;
+}
+.yellow
+{
+    background-color: orange;
+    color: white;
+}
+.gray
+{
+    background-color: gray;
+    color: black;
+}
+.general:active, .gray:active, .yellow:active
+{
+  background-color: white;
+}
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-top: -17px;
+    background-color: gray;
+    color: white;
+    width: 100%;
+}
+
+/* Media Query Start */
+/*
+==========================================
+Responsive Design
+==========================================
+*/
+@media (max-width: 575px) {
+    .cardb
+    {
+
+        width: 93%;
+        height: 707px;
+        margin-left: 3%;
+    
+    }
+    .button button
+{
+    width: 19%;
+    height: 68px;
+    margin: 2% 1% 2% 1%;
+    padding: 0% 0% 0% 0%;
+    border: 1px solid gray;
+    font-size: 18px;
+    border-radius: 39%;
+    text-align: center;
+   }
+   .calculator-2
+   {
+       display: none;
+   }
+  
+}
+    @media (min-width: 576px) and (max-width: 767px) {
+        .cardb
+        {
+            
+        width: 83%;
+        margin-left: 7%;
+        padding-top: 5%;
+    
+        }
+       .answer {
+        border: 1px solid gray;
+        height: 79px;
+        background-color: white;
+         }
+        }
+    @media (min-width: 768px) and (max-width: 991px) {
+
+       .answer {
+        border: 1px solid gray;
+        height: 79px;
+        background-color: white;
+    }
+    .cardb
+    {
+        
+    width: 83%;
+    margin-left: 7%;
+    padding-top: 5%;
+
+    }
+}
+   
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .cardb
+        {
+            width: 60%;
+            height: 707px;
+            margin-left: 26%;
+        }
+        .calculator-2
+        {
+            display: none;
+        }
+
+   }
+    @media (min-width: 1201) {
+        .calculator-2
+        {
+            display: none;
+        }
+       }

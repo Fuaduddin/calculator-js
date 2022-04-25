@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- Own Css style sheet -->
+      <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <section class="calculator">
+        <div class="container">
+            <div class="row pt-lg-5">
+                <div class="col-sm-12 col-md-12 ">
+                    <div class="cardb">
+                        <div class="card shadow p-3 mb-5  rounded">
+                            <div class="card-header topheader">
+                                <span>Calculator</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="answer" id="answer">
+                                    <div class="display float-end">
+                                        <div class="result pt-2" id="load" data-current>0</div>
+                                    </div>
+                                </div>
+                                    <div class="pt=5">
+                                    <div class="button">
+                                            <button class="btn gray"  data-num="%">%</button>
+                                            <button  class="btn gray" data-clear >CE</button>
+                                            <button  class="btn gray" data-clear>C</button>
+                                            <button  class="btn gray" data-delete><-</button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="btn btn-primary general" data-num="/">1/x</button>
+                                        <button class="btn btn-primary general" data-number >X<sup>2</sup></button>
+                                        <button class="btn btn-primary general" data-num="^">sqrt</button>
+                                        <button class="btn yellow" data-num="÷">÷</button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="btn btn-primary general"  data-num="7">7</button>
+                                        <button class="btn btn-primary general"  data-num="8">8</sub></button>
+                                        <button class="btn btn-primary general" data-num="9">9</button>
+                                        <button class="btn yellow" data-num="*" >X</button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="btn btn-primary general" data-num="4">4</button>
+                                        <button class="btn btn-primary general" data-num="5">5</button>
+                                        <button class="btn btn-primary general" data-num="6">6</button>
+                                        <button class="btn yellow" data-num="m" >-</button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="btn btn-primary general" data-num="1">1</button>
+                                        <button class="btn btn-primary general" data-num="2">2</button>
+                                        <button class="btn btn-primary general" data-num="3">3</button>
+                                        <button class="btn yellow"data-num="+" >+</button>
+                                    </div>
+                                    <div class="button">
+                                        <button class="btn btn-primary general">+/-</button>
+                                        <button class="btn btn-primary general" data-num="0">0</button>
+                                        <button class="btn btn-primary general" data-num=".">.</button>
+                                        <button class="btn yellow"   data-equals >=</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+ <!-- JS CDN  -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ <!-- Own js Sheet -->
+ <script src="calculator2.js"></script>
+</html>
